@@ -7,6 +7,8 @@
 
 --then create index
 
+--here is example from my work
+
 IF EXISTS(SELECT * FROM sys.indexes WHERE object_id = OBJECT_ID(N'[dbo].[CodeMaster]') AND name = N'_dta_index_CodeMaster_31_2073058421__K4_K2_K21_K22_1_3_5_8_9_10_11_12_13_14_15_16_17_18_19_20_23_24_25_26')
 DROP INDEX [_dta_index_CodeMaster_31_2073058421__K4_K2_K21_K22_1_3_5_8_9_10_11_12_13_14_15_16_17_18_19_20_23_24_25_26] ON [dbo].[CodeMaster]
 CREATE NONCLUSTERED INDEX [_dta_index_CodeMaster_31_2073058421__K4_K2_K21_K22_1_3_5_8_9_10_11_12_13_14_15_16_17_18_19_20_23_24_25_26]
